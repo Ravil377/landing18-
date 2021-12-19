@@ -1,0 +1,14 @@
+mixin page-cristmas-tree()
+    .container_girl
+        .girl__container
+            h1.girl__title.girl__title_mobil Our girls are cold and lonely
+            button.girl__button-signup.js-button-signup Sign up
+            img(src="./img/content/girl.png" alt="Girl").girl
+            .girl__form-container
+                h1.girl__title Our girls are cold and lonely
+                form(action='/', method='POST').modal__form
+                    label.form__label.form__label-user
+                        input(type="email" required name="email" placeholder="example123@gmail.com").form__input.form__input_girl
+                    label.form__label.form__label-password
+                        input(type="password" required name="password" placeholder="Password").form__input.form__input_girl
+                    button(type="submit").form__button-submit.form__button_bg.form__button_girl Sign up

@@ -1,0 +1,145 @@
+.container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.63%, rgba(78, 2, 0, 0.28) 100%), url(../img/content/bg.jpg) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(0);
+    // opacity: 0.9;
+}
+
+.girls__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 66px 33px;
+    background: url('../img/content/bg-top.png') no-repeat;
+    background-size: cover;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+        padding: 100px 125px 0;
+    }
+}
+
+.girls__title {
+    z-index: 1;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 110%;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+
+    @media (min-width: $screen-md) {
+        font-size: 5.6vw;
+    }
+}
+
+.girls__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border: none;
+    background: #ef0000;
+    border-radius: 6px;
+    font-family: "FuturaPT";
+    font-style: normal;
+    font-weight: 600;
+    color: #fff;
+    width: 232px;
+    height: 80px;
+    margin: 21px auto 0;
+    font-size: 24px;
+    cursor: pointer;
+    transition: $time;
+
+    @media (min-width: $screen-xl) {
+        width: unset;
+        height: unset;
+        font-size: 2.2vw;
+        letter-spacing: .02em;
+        margin: auto auto 16%;
+        padding: 2.5vw 9vw;
+    }
+    &:hover {
+        opacity: $opacity;
+    }
+}
+
+.girls {
+    position: absolute;
+    bottom: 0;
+    width: 96vh;
+    object-fit: contain;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);  
+    @media screen and (min-width: $screen-md) {
+        width: 132vh;
+    }
+    @media screen and (min-width: $screen-xl) {
+        width: 82%;
+    }
+}
+
+@keyframes up-down {
+    0% { transform: translate(0); }
+    12.5% { transform: translate(0, 2%); }
+    25% { transform: translate(0);  }
+    37.5% { transform: translate(0, 2%); }
+    50% { transform: translate(0); }
+    62.5% { transform: translate(0, 2%); }
+    75% { transform: translate(0); }
+    87.5% { transform: translate(0, 2%); }
+    100% { transform: translate(0); }
+}
+
+
+.girls__podarok_top {
+    animation: up-down 7.5s infinite ease-in-out;
+    position: absolute;
+    top: -9%;
+    left: -26%;
+    width: 60%;
+    
+    @media (min-width: $screen-xl) {
+        top: -10%;
+        left: 23%;
+        width: 23%;
+    }
+}
+
+
+.girls__podarok_left {
+    animation: up-down 7.5s infinite ease-in-out;
+    position: absolute;
+    top: 70%;
+    left: -31%;
+    width: 76%;
+    z-index: 2;
+    @media (min-width: $screen-xl) {
+        top: 24%;
+        left: -18%;
+        width: 48%;
+    }
+}
+
+.girls__podarok_right {
+    position: absolute;
+    top: 24%;
+    left: 63%;
+    width: 58%;
+    z-index: 1;
+    animation: up-down 7.5s infinite ease-in-out;
+    @media (min-width: $screen-xl) {
+        top: 53%;
+        left: 66%;
+        width: 29%;
+    }    
+}
+

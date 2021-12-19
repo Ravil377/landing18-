@@ -1,0 +1,155 @@
+.container_girl {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/content/tree.gif) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(0);
+    padding-top: 68px;
+    background-position: -12vw 50%;
+    @media (max-height: 469px) {
+       padding-top: 10px; 
+    }  
+    @media (min-width: $screen-sm) {
+        background-position: 0% 50%;
+    }
+    @media (min-width: 1024px) {
+        padding-top: 44px;
+    }
+}
+
+.girl__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        padding-right: 4%;
+        align-items: center;    
+        justify-content: flex-end;
+    }
+    @media (min-width: $screen-xl) {
+        padding-right: 14%;
+    }
+}
+
+.girl {
+    margin-top: auto;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    transform: translateX(40px);
+    object-fit: cover;
+    height: 72vh;
+    bottom: -2%;
+    @media (max-height: 569px) {
+        z-index: -1;
+        height: 66%;
+        transform: translateX(18px);
+    }
+    @media (min-width: $screen-sm) {
+        z-index: 1;
+        position: unset;
+        height: 88vh;
+    }
+    @media (min-height: 1024px) {
+        height: 77vh;
+    }
+    @media (min-width: 1024px) {
+        object-fit: contain;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        height: 101%;
+        left: 28vw;
+    }
+    @media (min-height: $screen-xl) {
+        height: 96vh;
+    }
+}
+.girl__title {
+    color: white;
+    font-family: 'FuturaPTExtra';
+    font-style: oblique;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    @media (min-width: $screen-md) {
+        font-size: 3.7vw;
+    }
+}
+
+.girl__title_mobil {
+    display: block;
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.girl__form-container {
+    z-index: 4;
+    display: none;
+    max-width: 45%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(50px);
+    border-radius: 6px;
+    @media (min-width: 1024px) {
+        display: block;
+    }
+}
+
+.form__button_bg {
+    background-color: white;
+    color: #490000;
+    @media (min-width: $screen-md) {
+        font-size: 24px;
+        padding: 18px 0;
+    }
+}
+
+.girl__button-signup {
+    max-width: 289px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 14px 0;
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+    font-family: 'FuturaPT';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: #490000;
+    transition: $time;
+    cursor: pointer;
+    &:hover {
+        opacity: $opacity;
+    }
+    display: block;
+    @media (min-width: 1024px) {
+        padding: 25px 0;
+        display: none;
+    }
+}
+
+.form__input_girl {
+    @media (min-width: 1441px) {
+        font-size: 1.3vw;
+    }
+}
+
+.form__button_girl {
+    @media (min-width: 1441px) {
+        font-size: 1.7vw;
+    }
+}
