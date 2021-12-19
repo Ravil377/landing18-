@@ -5637,130 +5637,130 @@
     joinButton.addEventListener('click', toggleModal);
     document.addEventListener("keydown", e => checkKeyPress(e));
     const girls = [{
-      image: "../img/content/girl1.jpg",
+      image: "./img/content/girl1.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl2.jpg",
+      image: "./img/content/girl2.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl3.jpg",
+      image: "./img/content/girl3.jpg",
       name: "Camila, 32"
     }, {
-      image: "../img/content/girl4.jpg",
+      image: "./img/content/girl4.jpg",
       name: "Bruna, 28"
     }, {
-      image: "../img/content/girl5.jpg",
+      image: "./img/content/girl5.jpg",
       name: "Alice, 29"
     }, {
-      image: "../img/content/girl6.jpg",
+      image: "./img/content/girl6.jpg",
       name: "Leticia, 27"
     }, {
-      image: "../img/content/girl7.jpg",
+      image: "./img/content/girl7.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl8.jpg",
+      image: "./img/content/girl8.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl9.jpg",
+      image: "./img/content/girl9.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl10.jpg",
+      image: "./img/content/girl10.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl11.jpg",
+      image: "./img/content/girl11.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl12.jpg",
+      image: "./img/content/girl12.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl13.jpg",
+      image: "./img/content/girl13.jpg",
       name: "Amanda, 24"
     }, {
-      image: "../img/content/girl14.jpg",
+      image: "./img/content/girl14.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl15.jpg",
+      image: "./img/content/girl15.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl16.jpg",
+      image: "./img/content/girl16.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl17.jpg",
+      image: "./img/content/girl17.jpg",
       name: "Isabel, 26"
     }, {
-      image: "../img/content/girl18.jpg",
+      image: "./img/content/girl18.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl19.jpg",
+      image: "./img/content/girl19.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl20.jpg",
+      image: "./img/content/girl20.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl21.jpg",
+      image: "./img/content/girl21.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl22.jpg",
+      image: "./img/content/girl22.jpg",
       name: "Sara, 22"
     }, {
-      image: "../img/content/girl23.jpg",
+      image: "./img/content/girl23.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl24.jpg",
+      image: "./img/content/girl24.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl25.jpg",
+      image: "./img/content/girl25.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl26.jpg",
+      image: "./img/content/girl26.jpg",
       name: "Bianca, 26"
     }, {
-      image: "../img/content/girl27.jpg",
+      image: "./img/content/girl27.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl28.jpg",
+      image: "./img/content/girl28.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl29.jpg",
+      image: "./img/content/girl29.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl30.jpg",
+      image: "./img/content/girl30.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl31.jpg",
+      image: "./img/content/girl31.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl32.jpg",
+      image: "./img/content/girl32.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl33.jpg",
+      image: "./img/content/girl33.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl34.jpg",
+      image: "./img/content/girl34.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl35.jpg",
+      image: "./img/content/girl35.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl36.jpg",
+      image: "./img/content/girl36.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl37.jpg",
+      image: "./img/content/girl37.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl38.jpg",
+      image: "./img/content/girl38.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl39.jpg",
+      image: "./img/content/girl39.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl40.jpg",
+      image: "./img/content/girl40.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl41.jpg",
+      image: "./img/content/girl41.jpg",
       name: "name"
     }, {
-      image: "../img/content/girl42.jpg",
+      image: "./img/content/girl42.jpg",
       name: "name"
     }];
 

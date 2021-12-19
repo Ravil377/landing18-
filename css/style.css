@@ -941,7 +941,7 @@ template {
     overflow-y: scroll;
     width: 100vw;
     height: 100vh;
-    background: url(../img/content/bg-anim.gif) no-repeat center center;
+    background: url(./img/content/bg-anim.gif) no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
     display: -ms-flexbox;
@@ -960,7 +960,7 @@ template {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url(../img/content/bg.png) no-repeat center center;
+    background: url(./img/content/bg.png) no-repeat center center;
     background-size: cover;
     opacity: 0.95;
     z-index: -1;
@@ -1027,7 +1027,7 @@ template {
     right: -70px;
     width: 97px;
     height: 97px;
-    background: url("../img/content/hand.png") no-repeat center center;
+    background: url("./img/content/hand.png") no-repeat center center;
     background-size: contain;
 }
 
