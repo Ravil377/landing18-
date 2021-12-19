@@ -41,6 +41,7 @@
 }
 
 .header__tile {
+    white-space: nowrap;
     position: absolute;
     font-family: BowlbyOneSC;
     left: 7px;
@@ -58,7 +59,8 @@
     }
 }
 
-.header__title-shadow {   
+.header__title-shadow { 
+    white-space: nowrap;  
     z-index: -1;
     font-family: BowlbyOneSC;
     font-style: normal;
