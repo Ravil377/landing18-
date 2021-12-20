@@ -5621,6 +5621,9 @@
     const joinButton = document.querySelector('.js-join-now');
     const modal = document.querySelector('.modal');
     const closeModalButton = modal.querySelector('.js-modal-close-button');
+    const sliderButtons = document.querySelector('.slider__container');
+    const sliderContainer = document.querySelector('.slider__list');
+    const cardTemplate = document.querySelector('#card');
 
     const toggleModal = () => modal.classList.toggle('modal_opened');
 
@@ -5632,6 +5635,15 @@
       }
     };
 
+    sliderButtons.addEventListener('click', e => {
+      if (e.target.closest('.swiper-slide') != null && e.target.closest('.swiper-slide').classList.contains('slider__item')) {
+        toggleModal();
+      }
+
+      if (e.target.closest('.slider__button') != null && e.target.closest('.slider__button').classList.contains('swiper-button-disabled')) {
+        toggleModal();
+      }
+    });
     modal.addEventListener("click", e => checkPressOverlay(e));
     closeModalButton.addEventListener('click', toggleModal);
     joinButton.addEventListener('click', toggleModal);
@@ -5775,9 +5787,6 @@
       return sourceArray;
     }
 
-    const sliderContainer = document.querySelector('.slider__list');
-    const cardTemplate = document.querySelector('#card');
-
     function loadCards(container, data) {
       const cardsElements = data.map(getCard);
       container.append(...cardsElements);
@@ -5793,13 +5802,12 @@
       return cardElement;
     }
 
-    const newGirls = shuffle(girls);
+    const newGirls = shuffle(girls).slice(0, 8);
     loadCards(sliderContainer, newGirls);
     document.addEventListener('DOMContentLoaded', function () {
       new Swiper$1('.swiper', {
         slidesPerView: 'auto',
         spaceBetween: 12,
-        loop: true,
         centeredSlidesBounds: true,
         // autoHeight,
         navigation: {

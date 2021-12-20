@@ -1133,6 +1133,15 @@ template {
     background-position: center center;
 }
 
+.slider__item:last-child {
+    margin-right: 0 !important;
+}
+
+.slider__item:hover {
+    -ms-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+}
+
 .slider__item::after {
     content: "online";
     background: #00bc35;
@@ -1235,7 +1244,7 @@ template {
 
 .modal {
     overflow-y: auto;
-    height: 0;
+    height: 100vh;
     opacity: 0;
     z-index: -2;
     position: fixed;
@@ -1246,13 +1255,12 @@ template {
     left: 0;
     right: 0;
     background: rgba(39, 0, 0, 0.4);
-    transition: 0.3s, height 0s 0.5s;
+    transition: 0.3s;
 }
 
 .modal_opened {
     height: 100vh;
     opacity: 1;
-    transition: opacity 0.5s;
     z-index: 99;
 }
 
@@ -1265,6 +1273,15 @@ template {
     height: -webkit-fit-content;
     height:         fit-content;
     max-width: 400px;
+    min-height: 366px;
+    -ms-transform: translateY(100%);
+        transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.modal_opened .modal__container {
+    -ms-transform: translateY(0);
+        transform: translateY(0);
 }
 
 .modal__border {
@@ -1430,6 +1447,12 @@ template {
         display: block;
     }
 
+    .slider__item:hover {
+        max-width: 315px;
+        -ms-transform: translateY(-20px) scale(1, 1.11);
+            transform: translateY(-20px) scale(1, 1.11);
+    }
+
     .slider__desc {
         font-size: 20px;
         line-height: 24px;
@@ -1473,12 +1496,6 @@ template {
         height: 28px;
         font-size: 16px;
         line-height: 20px;
-    }
-
-    .slider__item:hover {
-        max-width: 315px;
-        -ms-transform: translateY(-20px) scale(1, 1.11);
-            transform: translateY(-20px) scale(1, 1.11);
     }
 }
 
