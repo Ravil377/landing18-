@@ -5643,7 +5643,7 @@
           toggleModal();
         } else {
           joinButton.classList.add('header__button_anim');
-          setTimeout(() => joinButton.classList.remove('header__button_anim'), 1000);
+          setTimeout(() => joinButton.classList.remove('header__button_anim'), 1500);
         }
       }
 
