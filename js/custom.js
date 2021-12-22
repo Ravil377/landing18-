@@ -5636,8 +5636,15 @@
     };
 
     sliderButtons.addEventListener('click', e => {
+      console.log(window.innerWidth);
+
       if (e.target.closest('.swiper-slide') != null && e.target.closest('.swiper-slide').classList.contains('slider__item')) {
-        toggleModal();
+        if (window.innerWidth >= 768) {
+          toggleModal();
+        } else {
+          joinButton.classList.add('header__button_anim');
+          setTimeout(() => joinButton.classList.remove('header__button_anim'), 1000);
+        }
       }
 
       if (e.target.closest('.slider__button') != null && e.target.closest('.slider__button').classList.contains('swiper-button-disabled')) {
